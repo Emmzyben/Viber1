@@ -10,12 +10,11 @@ listeners can support the artist by tipping them with crypto
 
 Attach your song and upload it, let the audience feel the vibe!
 
-##Technologies used include:
-,-React.js
-,+Solidity
-,truffle
-,ipfs
-,html
-,css
-,metamask
+##Technologies used include:</br>,React.js
+,</br>,Solidity
+,</br>,truffle
+,</br>,ipfs
+,</br>,html
+,</br>,css
+,</br>,metamask
 
