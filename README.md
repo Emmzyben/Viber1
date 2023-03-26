@@ -9,7 +9,7 @@ To upload their song, artists can fill the upload form with the required details
 listeners can support the artist by tipping them with crypto
 
 Attach your song and upload it, let the audience feel the vibe!
-
+![#f03c15]
 ##Technologies used include:
 ,React.js
 ,Solidity
@@ -18,3 +18,4 @@ Attach your song and upload it, let the audience feel the vibe!
 ,html
 ,css
 ,metamask
+#f03c15`
