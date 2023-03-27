@@ -255,7 +255,7 @@ const getAllSongs = async () => {
           <input type="file" id="audio" name="files"  required />
         </div>
         <div>
-          <input type="submit" value="Submit" id="submit" />
+          <input type="submit" value="Submit" />
         </div>
       </form>
 </section>
