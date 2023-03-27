@@ -47,7 +47,6 @@ const walletConnected = async () => {
     if (accounts.length) {
       setGlobalState('connectedAccount', accounts[0].toLowerCase())
     } else {
-      alert('Please connect wallet.')
       console.log('No accounts found.')
     }
   } catch (error) {
