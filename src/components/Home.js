@@ -228,12 +228,12 @@ const getAllSongs = async () => {
 </nav>
 
 <section>
-  <div id="modal">
+  
     <h3 style={{ color: "white" }}>Post your music</h3>
     <h4 style={{ color: "rgb(226, 79, 79)" }}>
       Share your music with the community!
     </h4>
- </div>
+ 
  <form onSubmit={handleSubmit} >
          <h3>Upload song</h3>
         <div>
