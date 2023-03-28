@@ -1,4 +1,4 @@
 
-    export const OWNER_ADDRESS = "0xfBAD12ab23a4e14fF9Df85EF090f00b88fb45885"
-    export const CONTRACT_ADDRESS = "0x31f841Ba4aeB1AE4668a46594C52CCE20f6075BA"
+    CONTRACT_ADDRESS = "0xB576c0f320fdffDa4de110A1d3a5ace63975Cf30"
     
+    Verification status = https://mumbai.polygonscan.com/address/0xB576c0f320fdffDa4de110A1d3a5ace63975Cf30#code
