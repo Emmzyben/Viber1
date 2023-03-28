@@ -1,5 +1,5 @@
 #[CLICK HERE TO ACCESS THE MAIN SITE (https://viber-sigma.vercel.app/)](https://viber-sigma.vercel.app/)
-</br>To interact with the app, connect your metamask to polygon-mumbai test net and get some eth</br>
+</br>To interact with the app, connect your metamask to polygon-mumbai test net and get some mumbai eth</br>
 </br>Viber is a music sharing platform where artists can upload and share their song and get tipped for good music by the listeners
 
 With viber artists music records are stored in the blockchain giving the artists authenticity and full ownership rights of their work
