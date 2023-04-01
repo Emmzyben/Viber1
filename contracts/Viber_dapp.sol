@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract Viber {
+contract viber {
     struct Song {
         string artistName;
         string songTitle;
@@ -18,25 +18,25 @@ contract Viber {
         songCounter++;
     }
 
-    //gets all the songs that have been uploaded
-    function getAllSongs() public view returns (Song[] memory) {
-        Song[] memory allSongs = new Song[](songCounter);
-        for (uint256 i = 0; i < songCounter; i++) {
-            allSongs[i] = songs[i];
-        }
-        return allSongs;
+    //gets all the songs that have been uploaded in reverse order
+   function getAllSongs() public view returns (Song[] memory) {
+    Song[] memory allSongs = new Song[](songCounter);
+    uint256 j = 0;
+    for (uint256 i = songCounter - 1; i >= 0; i--) {
+        allSongs[j] = songs[i];
+        j++;
     }
+    return allSongs;
+}
 
-    // sends tip directly to the artist's cryptoAddress
-function payArtist(uint256 _songIndex, uint256 _tip) public payable {
+
+
+//gets the address associated with the song
+  function getCryptoAddress(uint256 _songIndex) public view returns (string memory) {
     require(_songIndex < songCounter, "Invalid song index provided.");
-    require(msg.value >= _tip, "Insufficient funds to pay the tip.");
 
     Song storage song = songs[_songIndex];
-address payable artistAddress = payable(address(uint160(uint256(keccak256(abi.encodePacked(song.cryptoAddress))))));
-
-
-    artistAddress.transfer(_tip);
+    return song.cryptoAddress;
 }
 
 }
