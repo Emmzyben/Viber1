@@ -1,4 +1,4 @@
 
-    CONTRACT_ADDRESS = "0xB576c0f320fdffDa4de110A1d3a5ace63975Cf30"
+    CONTRACT_ADDRESS = "0xB666ca7470D87C2fB911F04C17E0c9f657D2c070"
     
-    Verification status = https://mumbai.polygonscan.com/address/0xB576c0f320fdffDa4de110A1d3a5ace63975Cf30#code
+    Verification status = https://mumbai.polygonscan.com/address/0xB666ca7470D87C2fB911F04C17E0c9f657D2c070#code
