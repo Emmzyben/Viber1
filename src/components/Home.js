@@ -86,24 +86,29 @@ const getAllSongs = async () => {
 
 
 
- //this function takes the song index as an argument and calls the payartist method to pay the artist whose index matches the given index
- const payArtist = async (index) => {
+ //this function takes the song index as an argument and calls the getCryptoAddress method to get the crypto address associated with the song.
+const payArtist = async (songIndex) => {
   const account = getGlobalState('connectedAccount');
   const contract = await getContract();
-  console.log(contract);
-  const paymentAmount = prompt(`Please enter tip amount here to confirm payment:`);
-  const tip = new BigNumber(paymentAmount).multipliedBy('1000000000000000000').toFixed(0);// converts the tip amount to a bignumber and also to converts it to wei.
+  
   try {
-    await contract.methods.payArtist(index, tip).send({
+    const cryptoAddress = await contract.methods.getCryptoAddress(songIndex).call();
+    const paymentAmount = prompt(`Please enter tip amount here to confirm payment:`);
+    const tip = new BigNumber(paymentAmount).multipliedBy('1000000000000000000').toFixed(0); //converts the amount to wei
+    const tx = {
       from: account,
-      value: tip
-    });
-    alert("Payment successful!.Thanks for the tip");
+      to: cryptoAddress,
+      value: tip,
+      gasPrice: await ethereum.request({ method: 'eth_gasPrice' }) // Use the current gas price from the network
+    };
+    const txHash = await ethereum.request({ method: 'eth_sendTransaction', params: [tx] });
+    alert("Payment successful!. Thanks for the tip. Transaction hash: " + txHash);
   } catch (error) {
     alert("Transaction failed.");
     console.error(error);
   }
 }
+
 
 
 
