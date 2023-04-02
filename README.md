@@ -1,4 +1,4 @@
-#[CLICK HERE TO ACCESS THE MAIN SITE (https://viber-nine.vercel.app/)](https://viber-nine.vercel.app/)
+#[CLICK HERE TO ACCESS THE MAIN SITE (https://viber-music.vercel.app/)](https://viber-music.vercel.app/)
 </br>To interact with the app, connect your metamask to polygon-mumbai test net and get some mumbai eth.</br></br>
 To confirm the verified smart contract log on to (https://mumbai.polygonscan.com/address/0x7538bE5f180Cce1a22030b1d642863A36D118720)</br>
 
