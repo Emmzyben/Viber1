@@ -1,6 +1,6 @@
-#[CLICK HERE TO ACCESS THE MAIN SITE (https://viber5.vercel.app/)](https://viber5.vercel.app/)
+#[CLICK HERE TO ACCESS THE MAIN SITE (https://viber-nine.vercel.app/)](https://viber-nine.vercel.app/)
 </br>To interact with the app, connect your metamask to polygon-mumbai test net and get some mumbai eth.</br></br>
-To confirm the verified smart contract log on to (https://mumbai.polygonscan.com/address/0x3DA16539399a9d98816ED2988AE2f598Add6D77B)</br>
+To confirm the verified smart contract log on to (https://mumbai.polygonscan.com/address/0xB576c0f320fdffDa4de110A1d3a5ace63975Cf30)</br>
 
 </br>Viber is a music sharing platform where artists can upload and share their song and get tipped for good music by the listeners
 
