@@ -19,16 +19,13 @@ contract viber {
     }
 
     //gets all the songs that have been uploaded in reverse order
-   function getAllSongs() public view returns (Song[] memory) {
-    Song[] memory allSongs = new Song[](songCounter);
-    uint256 j = 0;
-    for (uint256 i = songCounter - 1; i >= 0; i--) {
-        allSongs[j] = songs[i];
-        j++;
+    function getAllSongs() public view returns (Song[] memory) {
+        Song[] memory allSongs = new Song[](songCounter);
+        for (uint256 i = 0; i < songCounter; i++) {
+            allSongs[i] = songs[i];
+        }
+        return allSongs;
     }
-    return allSongs;
-}
-
 
 
 //gets the address associated with the song
