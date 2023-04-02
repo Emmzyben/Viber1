@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract viber {
+contract viber5{
     struct Song {
         string artistName;
         string songTitle;
