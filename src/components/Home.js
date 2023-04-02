@@ -87,14 +87,15 @@ const getAllSongs = async () => {
 
 
  //this function takes the song index as an argument and calls payartist function
-const payArtist = async (index) => {
+ const payArtist = async (index) => {
   const account = getGlobalState('connectedAccount');
   const contract = await getContract();
-  console.log(contract);
   const paymentAmount = prompt(`Please enter tip amount here to confirm payment:`);
-  const tip = new BigNumber(paymentAmount).multipliedBy('1000000000000000000').toFixed(0);// converts the tip amount to a bignumber and also to converts it to wei.
+  const tip = new BigNumber(paymentAmount).multipliedBy('1000000000000000000').toFixed(0); // converts the tip amount to a bignumber and also to converts it to wei.
+
   try {
-    await contract.methods.payArtist(index, tip).send({
+    const cryptoAddress = await contract.methods.getSongCryptoAddress(index).call();
+    await contract.methods.PayArtist(cryptoAddress, tip).send({
       from: account,
       value: tip
     });
@@ -104,6 +105,7 @@ const payArtist = async (index) => {
     console.error(error);
   }
 }
+
 
 
 
